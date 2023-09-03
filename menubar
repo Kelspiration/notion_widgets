@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Google Font -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+
+	<!-------->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+			font-family: 'Advent Pro', sans-serif;
+			padding: 8px;
+			text-align: center;
+			margin: 7px auto;
+			width: fit-content;
+		}
+
+		.navMenu a {
+			color: #272727;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: inline-block;
+			padding: 6px;
+		}
+
+		.background {
+			background-color: #ece5f0;
+		}
+
+		.border {
+			border: 1px solid #cccccc;
+
+		}
+
+		.navMenu a:hover {
+
+			color: #d09c0b;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navMenu  border">
+		<a id="home" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house"></i> Home</a>
+		<a id="inbox" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-inbox"></i> Inbox</a>
+		<a id="week" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-calendar-week"></i> Planner</a>
+		<a id="projects" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-briefcase"></i> Projects</a>
+		<a id="tasks" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-list-check"></i> Tasks</a>
+		<a id="business" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-money-bill-wave"></i> Business</a>
+		<a id="knowledge" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-lightbulb"></i> Knowledge</a>
+		<a id="topics" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-layer-group"></i> Topics</a>
+		<a id="notes" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-book"></i> Notes</a>
+		<a id="media" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-bookmark"></i> Media</a>
+		<a id="resourses" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-wrench"></i> Resourses</a>
+		<a id="lifewiki" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-heart"></i> Lifewiki</a>
+
+
+
+	</nav>
+
+
+	<script>
+
+		let direction = "horizontal";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {
+
+			if (id == 'home')
+				window.open("https://www.notion.so/kelspirationn/IT-S-GIVING-SLAY-0527ec6f54984b4682d62be514b23c57?pvs=4", '_blank').focus();
+			else if (id == "tasks")
+				window.open("https://www.notion.so/kelspirationn/TASKS-a04b2f4979694de5b1af20aaa4b28049?pvs=4", '_blank').focus();
+			else if (id == "days")
+				window.open("https://www.notion.so/kelspirationn/DAYS-9055a5f5f55b4bf3840171fd1ec36c9c?pvs=4", '_blank').focus();
+			else if (id == "weeks")
+				window.open("https://www.notion.so/kelspirationn/WEEKS-3c188d08948d4aa9b50e848dfdc3e541?pvs=4", '_blank').focus();
+			else if (id == "my whys")
+				window.open("https://www.notion.so/kelspirationn/MY-WHYS-705c6b96f8824b0691df4d0a09e839c2?pvs=4", '_blank').focus();
+			else if (id == "idea chamber")
+				window.open("https://www.notion.so/kelspirationn/IDEA-CHAMBER-514924953b09440a92dd97675721ce92?pvs=4", '_blank').focus();
+			else if (id == "shop journal")
+				window.open("https://www.notion.so/kelspirationn/SHOP-JOURNAL-0714048900f44e0fb2a77f5bf758c621?pvs=4", '_blank').focus();
+			else if (id == "book writing")
+				window.open("https://www.notion.so/kelspirationn/BOOK-WRITING-f0be9c9a12384c8ba999ca4c0daaef10?pvs=4", '_blank').focus();
+			else if (id == "socials")
+				window.open("https://www.notion.so/kelspirationn/SOCIALS-39ff6102113449e9bc11172079f50e4a?pvs=4", '_blank').focus();
+		
+
+		}
+	</script>
+
+
+</body>
+
+</html>
